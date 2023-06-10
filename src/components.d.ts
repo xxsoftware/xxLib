@@ -9,7 +9,22 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    CloseHandler: typeof import('./components/CloseHandler.vue')['default']
+    CollapseTransition: typeof import('./components/CollapseTransition.vue')['default']
+    Footer: typeof import('./components/Footer.vue')['default']
+    HiddenSourceSvg: typeof import('./components/Svg/HiddenSourceSvg.vue')['default']
+    Loading: typeof import('./components/Loading.vue')['default']
+    Modal: typeof import('./components/Modal.vue')['default']
+    RCard: typeof import('./components/rCard.vue')['default']
+    README: typeof import('./components/README.md')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Showcase: typeof import('./components/Showcase.vue')['default']
+    Sidebar: typeof import('./components/Sidebar.vue')['default']
+    SourceCode: typeof import('./components/SourceCode.vue')['default']
+    Stars: typeof import('./components/Stars.vue')['default']
+    TheCounter: typeof import('./components/TheCounter.vue')['default']
+    TheFooter: typeof import('./components/TheFooter.vue')['default']
+    TheInput: typeof import('./components/TheInput.vue')['default']
   }
 }
